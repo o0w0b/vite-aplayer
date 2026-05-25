@@ -1,0 +1,5 @@
+{% for item in lyrics %}
+    <p {% if loop.index0 == 0 %}class="aplayer-lrc-current"{% endif %}>
+        {{ item[1] }}
+    </p>
+{% endfor %}

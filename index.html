@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="/img/favicon.png" />
+    <title>Vite-APlayer Test</title>
+    <!-- <link rel="stylesheet" href="/dist/APlayer.min.css"> -->
+</head>
+
+<body>
+    <div id="aplayer"></div>
+    <!-- <script src="/dist/APlayer.umd.js"></script> -->
+    <script type="module">
+        import '/dist/APlayer.min.css';
+        import APlayer from '/dist/APlayer.esm.js';
+        const player = new APlayer({
+            container: document.getElementById('aplayer'),
+            fixed: false,
+            theme: '#ffb86c',
+            order: 'list',
+            loop: 'all',
+            audio: [
+                {
+                    name: '旅',
+                    artist: 'VISUAL ARTS / Key',
+                    url: '/music/旅.mp3',
+                    cover: '/img/cover.png',
+                }
+            ]
+        });
+    </script>
+</body>
+
+</html>

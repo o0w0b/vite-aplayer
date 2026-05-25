@@ -1,0 +1,8 @@
+{% for item in audio %}
+<li>
+    <span class="aplayer-list-cur" style="background-color: {{ item.theme or theme }};"></span>
+    <span class="aplayer-list-index">{{ loop.index0 + index }}</span>
+    <span class="aplayer-list-title">{{ item.name }}</span>
+    <span class="aplayer-list-author">{{ item.artist }}</span>
+</li>
+{% endfor %}
