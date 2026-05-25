@@ -1,13 +1,32 @@
 const langs = [
-    { title: '简体中文', path: '/zh-Hans/', matchPath: /^\/zh-Hans/ },
-    { title: 'English', path: '/en/', matchPath: /^\/en/ },
+    { title: '简体中文', path: '/zh-Hans/' },
+    { title: 'English', path: '/en/' },
 ];
 
 docute.init({
     landing: 'landing.html',
     title: 'Vite-APlayer',
-    repo: 'o0w0b/Vite-APlayer',
-    'edit-link': 'https://github.com/o0w0b/vite-aplayer/tree/main/docs/README.md',
+    // repo: 'o0w0b/vite-aplayer',
+    // 'edit-link': 'https://github.com/o0w0b/vite-aplayer/blob/main/docs/zh-Hans/README.md',
+    // 自定义图标
+    icons: [
+        {
+            icon: 'edit',
+            label: '📝 Edit',
+            link: 'https://github.com/o0w0b/vite-aplayer/blob/main/docs/zh-Hans/README.md'
+        },
+        {
+            icon: 'github',
+            label: '⭐ GitHub',
+            link: 'https://github.com/o0w0b/vite-aplayer'
+        }
+    ],
+    // 显示侧边栏
+    sidebar: true,
+    // 隐藏侧边栏按钮
+    disableSidebarToggle: false,
+    // 显示 h2 到 h4 的标题
+    tocVisibleDepth: 3,
     nav: {
         default: [
             {
@@ -38,7 +57,7 @@ docute.init({
         docsearch({
             apiKey: '',
             indexName: 'vite-aplayer',
-            tags: ['zh-Hans', 'english'],
+            tags: ['zh-Hans', 'en'],
             url: 'https://aplayer.o0w0b.top'
         }),
         evanyou(),

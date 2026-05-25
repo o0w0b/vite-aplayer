@@ -1,4 +1,5 @@
 ---
+sidebar: true
 nav: zh-Hans
 search: zh-Hans
 ---

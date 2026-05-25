@@ -1,5 +1,7 @@
 ---
-search: english
+sidebar: true
+nav: en
+search: en
 ---
 
 # APlayer
